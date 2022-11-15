@@ -1,7 +1,7 @@
 # Your workflow name.
 name: Deploy to heroku.
 
-# Run workflow on every push to main branch.
+# Run workflow on every push to main branch.that is this part is triggering
 on:
   push:
     branches: [main]
@@ -9,7 +9,7 @@ on:
 # Your workflows jobs.
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest ##github allocated this ubuntu system and automatically create a docker image and send to the heroku by trailing code 
     steps:
       # Check-out your repository.
       - name: Checkout
